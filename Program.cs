@@ -15,7 +15,7 @@ namespace ShootingDice
             OneHigherPlayer player2 = new OneHigherPlayer();
             player2.Name = "Sue";
 
-            player2.Play(player1);
+            player1.Play(player2);
             Console.WriteLine("-------------------");
 
             HumanPlayer player3 = new HumanPlayer();
@@ -23,6 +23,15 @@ namespace ShootingDice
 
             player3.Play(player2);
 
+            Console.WriteLine("-------------------");
+
+            CreativeSmackTalkingPlayer player4 = new CreativeSmackTalkingPlayer();
+            player4.Name = "Jimbo";
+
+            Player player5 = new Player();
+            player5.Name = "Drew";
+
+            player4.Play(player5);
             Console.WriteLine("-------------------");
 
             LargeDicePlayer large = new LargeDicePlayer();
