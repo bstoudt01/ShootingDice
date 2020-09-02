@@ -8,7 +8,7 @@ namespace ShootingDice
     {
         static void Main(string[] args)
         {
-            SoreLoserUpperHalfPlayer player1 = new SoreLoserUpperHalfPlayer();
+            SmackTalkingPlayer player1 = new SmackTalkingPlayer();
             player1.Name = "Bob";
             //player1.Taunt = "Hey... They Call me Robert Paulsen and you are a LOOOOSSSSEEERRRR";
 
@@ -41,11 +41,32 @@ namespace ShootingDice
 
             Console.WriteLine("-------------------");
 
+            UpperHalfPlayer player6 = new UpperHalfPlayer();
+            player6.Name = "The Dude";
+
+            Player player7 = new Player();
+            player7.Name = "Other Guy";
+
+            player6.Play(player7);
+            Console.WriteLine("-------------------");
+
+            SoreLoserUpperHalfPlayer player8 = new SoreLoserUpperHalfPlayer();
+            player8.Name = "Sad Panda  but with Bamboo";
+
+            SoreLoserPlayer player9 = new SoreLoserPlayer();
+            player9.Name = "Sad Panda";
+
             List<Player> players = new List<Player>()
             {
                 player1,
                 player2,
                 player3,
+                player4,
+                player5,
+                player6,
+                player7,
+                player8,
+                player9,
                 large
             };
 
