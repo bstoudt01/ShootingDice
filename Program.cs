@@ -8,9 +8,9 @@ namespace ShootingDice
     {
         static void Main(string[] args)
         {
-            SmackTalkingPlayer player1 = new SmackTalkingPlayer();
+            UpperHalfPlayer player1 = new UpperHalfPlayer();
             player1.Name = "Bob";
-            player1.Taunt = "Hey... They Call me Robert Paulsen and you are a LOOOOSSSSEEERRRR";
+            //player1.Taunt = "Hey... They Call me Robert Paulsen and you are a LOOOOSSSSEEERRRR";
 
             OneHigherPlayer player2 = new OneHigherPlayer();
             player2.Name = "Sue";
@@ -21,7 +21,7 @@ namespace ShootingDice
             HumanPlayer player3 = new HumanPlayer();
             player3.Name = "Bert";
 
-            player3.Play(player2);
+            player3.Play(player1);
 
             Console.WriteLine("-------------------");
 
