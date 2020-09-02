@@ -18,14 +18,14 @@ namespace ShootingDice
             player2.Play(player1);
             Console.WriteLine("-------------------");
 
-            Player player3 = new Player();
-            player3.Name = "Wilma";
+            HumanPlayer player3 = new HumanPlayer();
+            player3.Name = "Bert";
 
             player3.Play(player2);
 
             Console.WriteLine("-------------------");
 
-            Player large = new LargeDicePlayer();
+            LargeDicePlayer large = new LargeDicePlayer();
             large.Name = "Bigun Rollsalot";
 
             player1.Play(large);
